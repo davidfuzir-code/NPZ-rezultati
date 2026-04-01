@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<title>NPZ animacija</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+    font-family: sans-serif;
+  }
+
+  /* NPZ napis */
+  .npz {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff0000;
+    animation: moveNPZ 5s linear infinite alternate;
+  }
+
+  /* Animacija */
+  @keyframes moveNPZ {
+    0% { top: 0; left: 0; }
+    25% { top: 0; left: 90%; }
+    50% { top: 90%; left: 90%; }
+    75% { top: 90%; left: 0; }
+    100% { top: 0; left: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="npz">NPZ</div>
+</body>
+</html>
